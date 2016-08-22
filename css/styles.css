@@ -1,0 +1,7 @@
+#result li {
+  cursor: pointer;
+  color: blue;
+}
+#result li:hover {
+  text-decoration: underline;
+}
