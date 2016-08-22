@@ -1,7 +1,30 @@
-#result li {
-  cursor: pointer;
-  color: blue;
+#display {
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  display: none;
+  width:75%;
+  margin: auto;
+  padding: 2%;
 }
-#result li:hover {
-  text-decoration: underline;
+
+.notHere {
+  height: 10px;
+  background-color: rgba(0, 102, 143, .5);
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+li {
+  font-size: 1.2em;
+}
+
+#display .notHere:hover {
+  height: auto;
+  padding: 10px;
+}
+
+#display h1 {
+  text-align: center;
 }
