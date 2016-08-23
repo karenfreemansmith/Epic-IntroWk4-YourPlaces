@@ -47,7 +47,7 @@ $(document).ready(function(){
     var myLocation = new Location($("#place-input").val(), $("#landmark-input").val().split(","), $("#year-input").val().split("-"), $("#notes-input").val());
     $("#result ul").append("<li class='active'><a href='#'>"+ myLocation.place + "</a></li>");
     $("form#inputForm")[0].reset();
-    $("ul li").last().click(function(event){
+    $("ul a").last().click(function(event){
       event.preventDefault();
       var displayString = "<img class='img-responsive' src='img/travel.jpg' alt='generic travel image - replace with your own!'><h1>"+myLocation.place + "</h1><div class='notHere'><h2>" + myLocation.findSeason() + " " + myLocation.year + "</h2><ul>";
       myLocation.landmarks.forEach(function(landmark){
